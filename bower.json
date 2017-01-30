@@ -19,7 +19,7 @@
         "lib/postal.federation.js"
     ],
     "dependencies": {
-        "lodash": "^3.x",
-        "postal.js": ">=1.x"
+        "lodash": "^4.x",
+        "postal.js": ">=2.x"
     }
 }
