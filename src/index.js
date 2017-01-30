@@ -75,10 +75,13 @@ const fedx = postal.fedx = {
 			transports[transport] = [ target ];
 			break;
 		}
+
+		const that = this;
+
 		_.each( transports, function( targets, name ) {
 			targets = typeof targets === "boolean" ? [] : targets;
-			this.transports[name].signalReady( targets, callback );
-		}, this );
+			that.transports[name].signalReady( targets, callback );
+		} );
 	}
 };
 
